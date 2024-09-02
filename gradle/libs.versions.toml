@@ -1,0 +1,59 @@
+[versions]
+agp = "8.6.0"
+androidxRuntimeLivedata = "1.4.0"
+androidxRuntime = "1.6.6"
+converterGson = "2.9.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinxCoroutinesAndroidVersion = "1.7.3"
+kotlinxCoroutinesCoreVersion = "1.7.0"
+lifecycleRuntimeKtx = "2.8.3"
+activityCompose = "1.9.1"
+composeBom = "2024.04.01"
+loggingInterceptor = "4.10.0"
+navigationRuntimeKtx = "2.7.7"
+navigationCompose = "2.7.7"
+okhttp = "4.10.0"
+retrofitVersion = "2.9.0"
+contentpager = "1.0.0"
+squareupLoggingInterceptor = "5.0.0"
+uiVersion = "1.5.0"
+
+[libraries]
+adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "converterGson" }
+androidx-compose-runtime-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "androidxRuntime" }
+androidx-compose-runtime-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "androidxRuntimeLivedata" }
+androidx-compose-ui-ui = { module = "androidx.compose.ui:ui", version.ref = "uiVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesAndroidVersion" }
+kotlinx-coroutines-core-v170 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCoreVersion" }
+logging-interceptor-v4100 = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+androidx-contentpager = { group = "androidx.contentpager", name = "contentpager", version.ref = "contentpager" }
+squareup-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "squareupLoggingInterceptor" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
